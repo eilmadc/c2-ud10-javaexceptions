@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+import exception.MiExcepcion;
 import utils.ColorConsole;
-import utils.Utils;
 
 /**
  * @author elena-01
@@ -21,17 +21,19 @@ public class Ejercicio2 {
 	
 	// --------- Variables------------
 	public Scanner sc = new Scanner(System.in);
-	public Utils utils = new utils.Utils();
+	public MiExcepcion miexcepcion = new MiExcepcion();
 	public ColorConsole cc = new utils.ColorConsole();
 	
 	
 	//----------Métodos ----------
 	public void iniciaEjercicio() {
+		@SuppressWarnings("unused")
 		double num;
 		try {
-			num = Double.parseDouble(JOptionPane.showInputDialog(null, "ESTO es una PRUEBA DE EXCEPCION", TITULO , JOptionPane.QUESTION_MESSAGE));
+			num = Double.parseDouble(JOptionPane.showInputDialog(null, "Escribe un mensaje o caracter diferente de un numero", TITULO , JOptionPane.QUESTION_MESSAGE));
+			System.out.println("Has escrito: "+num);
 		} catch (Exception e) {
-			utils.customException(e.getMessage(), e.getClass().toString());
+			miexcepcion.customException(e.getMessage(), e.getClass().toString());
 		} 
 	}
 

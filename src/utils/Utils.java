@@ -73,37 +73,30 @@ public class Utils {
 		System.out.println("************ " + mensaje + " ***********\n");
 	}
 
-	//mostrar mensaje
+	// mostrar mensaje
 	public void imprime(String mensaje) {
 		System.out.println("\n------- " + mensaje + " -------\n");
 	}
-	
-	//mostrar mensaje
+
+	// mostrar mensaje
 	public void imprimeRayas(String mensaje) {
 		System.out.println("\n--    " + mensaje + "     --\n");
 	}
-	
-	//mostrar mensaje
+
+	// mostrar mensaje
 	public void imprimeLinea() {
 		System.out.println("\n__________________________________________________________\n");
 	}
-	
-	//mostrar mensaje
-		public void imprimeLineaMensaje(String mensaje) {
-			System.out.println("\n-----------------         "+ mensaje +"           --------------\n");
-		}
-	
-	//Devuelve double o float por pantalla con 2 posiciones.
+
+	// mostrar mensaje
+	public void imprimeLineaMensaje(String mensaje) {
+		System.out.println("\n-----------------         " + mensaje + "           --------------\n");
+	}
+
+	// Devuelve double o float por pantalla con 2 posiciones.
 	public String dosPos(double numero) {
 		String x = String.format("%.2f", numero);
 		return x;
 	}
-	
 
-	//Excepcion customizada
-	public void customException(String mensaje, String objeto) {
-		System.out.println(mensaje + "\nExcepcion capturada con " + mensaje + " : " +
-				"Esto es un objeto " + objeto
-				 +"\n Programa Terminado" );
-	}
 }

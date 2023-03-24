@@ -30,17 +30,16 @@ public class mainApp {
 	 */
 	public static void main(String[] args) {
 		// TODO: hacer Switch case control Ejercicio 1 a 5
+		// Muestra el menu mediante poantalla y dialog
+		utils.mostrarTitulo("UNIDAD 10 : JAVA EXCEPTIONS");
 		imprimeMenuPrincipal();
 	}
 
 	// Imprimir Menu
 	static public void imprimeMenuPrincipal() {
 
-		// Muestra el menu mediante poantalla y dialog
-		utils.mostrarTitulo("UNIDAD 10 : JAVA EXCEPTIONS");
 		String mensaje = " Opcion 1: EJERCICIO 1" + "\n Opcion 2: EJERCICIO 2" + "\n Opcion 3: EJERCICIO 3"
 				+ "\n Opcion 4: EJERCICIO 4" + "\n Opcion 5: EJERCICIO 5";
-		System.out.println(mensaje);
 
 		int opcion;
 
