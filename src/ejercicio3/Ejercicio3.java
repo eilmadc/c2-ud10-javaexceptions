@@ -12,7 +12,7 @@ import utils.Utils;
 public class Ejercicio3 {
 
 	// -------------- Constantes ------------------
-	final static String TITULO = "C02-UD10-Ejercicio1";
+	final static String TITULO = "C02-UD10-Ejercicio3";
 
 	// --------- Variables------------
 	Scanner sc = new Scanner(System.in);
