@@ -7,6 +7,7 @@ package exception;
  * @author elena-01
  *
  */
+@SuppressWarnings("serial")
 public class MiExcepcion extends Exception{
 
 	// codigo de la excepcion

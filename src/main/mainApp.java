@@ -18,23 +18,19 @@ import utils.Utils;
  *
  */
 public class mainApp {
-
 	// --------- Variables ------------
-
 	public Scanner sc = new Scanner(System.in);
 	public static Utils utils = new utils.Utils();
 	public ColorConsole cc = new utils.ColorConsole();
-
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO: hacer Switch case control Ejercicio 1 a 5
 		// Muestra el menu mediante poantalla y dialog
-		utils.mostrarTitulo("UNIDAD 10 : JAVA EXCEPTIONS");
+		utils.mostrarPrograma("UNIDAD 10 : JAVA EXCEPTIONS");
 		imprimeMenuPrincipal();
 	}
-
 	// Imprimir Menu
 	static public void imprimeMenuPrincipal() {
 
@@ -48,7 +44,6 @@ public class mainApp {
 
 			// Pide numero de opcion de MENU mediante dialog
 			opcion = utils.pideInt(mensaje, "UD10");
-			System.out.println(opcion);
 
 		} while (opcion > 5);
 
@@ -101,7 +96,6 @@ public class mainApp {
 			}
 
 			respuesta = utils.pideString("¿Deseas continuar?(si,no);", "MENU PRINCIPAL UD10");
-			System.out.println(respuesta);
 		} while (respuesta == "si");
 
 	}

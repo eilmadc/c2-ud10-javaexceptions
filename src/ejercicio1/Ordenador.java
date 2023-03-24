@@ -6,8 +6,6 @@ package ejercicio1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
-
 import utils.ColorConsole;
 import utils.Utils;
 

@@ -27,7 +27,6 @@ public class Ejercicio2 {
 	
 	//----------Métodos ----------
 	public void iniciaEjercicio() {
-		@SuppressWarnings("unused")
 		double num;
 		try {
 			num = Double.parseDouble(JOptionPane.showInputDialog(null, "Escribe un mensaje o caracter diferente de un numero", TITULO , JOptionPane.QUESTION_MESSAGE));
