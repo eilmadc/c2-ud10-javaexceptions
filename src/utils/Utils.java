@@ -98,4 +98,12 @@ public class Utils {
 		String x = String.format("%.2f", numero);
 		return x;
 	}
+	
+
+	//Excepcion customizada
+	public void customException(String mensaje, String objeto) {
+		System.out.println(mensaje + "\nExcepcion capturada con " + mensaje + " : " +
+				"Esto es un objeto " + objeto
+				 +"\n Programa Terminado" );
+	}
 }
